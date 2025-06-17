@@ -20,3 +20,6 @@ exports.director1 = {
     numberOfReports: 10
 };
 console.log(exports.director1);
+var printTeacher = function (firstName, lastName) {
+    return "".concat(firstName.charAt(0), ". ").concat(lastName);
+};
