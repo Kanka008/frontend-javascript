@@ -1,4 +1,4 @@
- interface Teacher{
+export interface Teacher{
        readonly firstName: string;
        readonly lastName: string;
         fullTimeEmployee: boolean;
@@ -7,7 +7,7 @@
         [key:string]:any;
 }
 
-const teacher1: Teacher ={
+export const teacher1: Teacher ={
     firstName: "Marion",
     lastName: "Mituri",
     fullTimeEmployee: true,
@@ -16,3 +16,17 @@ const teacher1: Teacher ={
     contract: 5,
 }
 console.log(teacher1)
+
+export interface Director extends Teacher{
+    numberOfReports: number;
+}
+export const director1: Director = {
+    firstName: "Erim",
+    lastName: "Kazungu",
+    fullTimeEmployee: true,
+    yearsOfExperience: 25,
+    location: "rwanda",
+    contract: 65,
+    numberOfReports: 10
+}
+console.log(director1);
