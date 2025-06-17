@@ -4,6 +4,7 @@ exports.Teacher = exports.Director = void 0;
 exports.createEmployee = createEmployee;
 exports.isDirector = isDirector;
 exports.executeWork = executeWork;
+exports.teachClass = teachClass;
 var Director = /** @class */ (function () {
     function Director() {
     }
