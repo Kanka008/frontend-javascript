@@ -21,3 +21,15 @@ export class Director implements DirectorInterface{
         return `Getting to Director Tasks.`
     }
 }
+
+export class Teacher implements TeacherInterface{
+    workFromHome(): string {
+        return `Cannot work from Home.`
+    }
+    getCoffeeBreak(): string {
+        return `Cannot have a coffee break.`
+    }
+    workTeacherTasks(): string {
+        return `Getting to work.`
+    }
+}
