@@ -52,7 +52,7 @@ export interface studentConstuctor{
        new (firstName: string, lastName: string): studentClassInterface
 }
 
-export class studentClass implements studentClassInterface{
+export class StudentClass implements studentClassInterface{
         firstName: string;
         lastName: string
         
@@ -69,3 +69,4 @@ export class studentClass implements studentClassInterface{
         }
         
 }
+

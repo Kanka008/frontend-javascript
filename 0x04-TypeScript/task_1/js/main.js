@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.studentClass = exports.director1 = exports.teacher1 = void 0;
+exports.StudentClass = exports.director1 = exports.teacher1 = void 0;
 exports.teacher1 = {
     firstName: "Marion",
     lastName: "Mituri",
@@ -23,17 +23,17 @@ console.log(exports.director1);
 var printTeacher = function (firstName, lastName) {
     return "".concat(firstName.charAt(0), ". ").concat(lastName);
 };
-var studentClass = /** @class */ (function () {
-    function studentClass(firstName, lastName) {
+var StudentClass = /** @class */ (function () {
+    function StudentClass(firstName, lastName) {
         this.firstName = firstName,
             this.lastName = lastName;
     }
-    studentClass.prototype.workOnHomework = function () {
+    StudentClass.prototype.workOnHomework = function () {
         return 'Currently working';
     };
-    studentClass.prototype.displayName = function () {
+    StudentClass.prototype.displayName = function () {
         return this.firstName;
     };
-    return studentClass;
+    return StudentClass;
 }());
-exports.studentClass = studentClass;
+exports.StudentClass = StudentClass;

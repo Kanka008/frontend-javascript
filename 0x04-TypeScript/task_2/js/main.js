@@ -2,6 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Teacher = exports.Director = void 0;
 exports.createEmployee = createEmployee;
+exports.isDirector = isDirector;
+exports.executeWork = executeWork;
 var Director = /** @class */ (function () {
     function Director() {
     }
@@ -38,5 +40,16 @@ function createEmployee(salary) {
     }
     else {
         return new Director();
+    }
+}
+function isDirector(employee) {
+    return employee.workDirectorTasks !== undefined;
+}
+function executeWork(employee) {
+    if (employee instanceof Director) {
+        return employee.workDirectorTasks();
+    }
+    else {
+        return employee.workTeacherTasks();
     }
 }
